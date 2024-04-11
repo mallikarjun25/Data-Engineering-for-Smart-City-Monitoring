@@ -26,9 +26,3 @@ The dataset consists of histopathologic scans of lymph nodes, where each image p
 - The dataset is split into training and validation sets using a subset random sampler.
 - The model is trained using the training set and evaluated on the validation set.
 - Evaluation metrics such as ROC AUC score and accuracy are used to assess the performance of the model.
-
-## Credits
-- References to relevant research papers, articles, and tutorials used for model development and understanding.
-
-## License
-- Mention any license information related to the code or dataset used in the project.
