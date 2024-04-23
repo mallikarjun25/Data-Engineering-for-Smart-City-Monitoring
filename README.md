@@ -7,7 +7,7 @@ This repository contains the codebase for a Smart City Monitoring System, which 
 - `main.py`: Python script for generating simulated vehicle movement data and producing it to Kafka topics.
 - `spark-city.py`: Spark script for processing streaming data from Kafka topics and writing it to Amazon S3.
 - `docker-compose.yml`: Docker configuration file for deploying Kafka, Spark, and other services.
-- `Smart city analysis report.pbix`: Power BI dashboard report
+- `Smart city analysis report.pbix`: Power BI dashboard report.
 - `requirements.txt`: Python dependencies required for running the project.
 - `README.md`: Instructions and overview of the project.
 
