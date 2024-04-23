@@ -50,3 +50,21 @@ The Smart City Monitoring System efficiently processes real-time data streams us
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Commands used in running the code:
+docker compose up -d
+
+pip freeze > requirements.txt
+
+python jobs/main.py
+
+kafka-topics --list --bootstrap-server broker:29092
+
+kafka-console-consumer --topic vehicle_data --bootstrap-server broker:9092 --from-beginning
+
+kafka-topics —delete —topic emergency_data --bootstrap-server broker:29092
+
+
+docker exec -it urbananalyticssmartcitydatamonitoring-spark-master-1 spark-submit \
+    --master spark://spark-master:7077 \
+    --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0,org.apache.hadoop:hadoop-aws:3.3.1,com.amazonaws:aws-java-sdk:1.11.469 jobs/spark-city.py
